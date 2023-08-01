@@ -1,0 +1,774 @@
+body {
+    background-color: rgb(1, 2, 19);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(https://media.istockphoto.com/id/1446059991/video/coffee-cup-coffee-beans-close-up-beautiful-natural-steaming-smoke-from-ceramic-black-coffee.jpg?s=640x640&k=20&c=rhn-mP84Bwn4UNPexBgZm9kfg0_d39jHvFcDdBDanc0=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+
+}
+
+header::after {
+    content: " ";
+    background: #000000;
+    opacity: 0.5;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+}
+
+nav {
+    height: 65px;
+    /* background: rgb(1, 2, 17); */
+    color: white;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 0%;
+    z-index: 2;
+}
+
+nav .links {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    /* display: block; */
+    margin: 0;
+}
+
+nav .links a:hover {
+    color: rgb(221, 181, 49);
+    text-decoration: underline;
+}
+
+nav .icons {
+    color: white;
+    margin: 10px 20px;
+}
+
+.home {
+    background: none;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+}
+
+.home-data {
+    width: 315px;
+    margin: 40px 200px;
+    text-align: center;
+    padding: 13px;
+    z-index: 2;
+}
+
+
+.about h1 {
+    text-align: center;
+    color: rgb(165, 135, 35);
+}
+
+.about {
+    max-width: 100%;
+    height: auto;
+    margin: 40px;
+    border-bottom: 1px solid #555353;
+}
+
+.about-data {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: flex
+}
+
+.about-data .img {
+
+    flex: 50%;
+
+}
+
+.about-data img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-data .para {
+    flex: 50%;
+    text-align: justify;
+    padding: 15px;
+}
+
+.menu {
+    max-width: 100%;
+    height: auto;
+    margin: 40px;
+}
+
+.menu h1 {
+    text-align: center;
+    color: rgb(165, 135, 35);
+    color: white;
+    padding: 4px;
+}
+
+.cards {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #555353;
+}
+
+.card {
+    width: 250px;
+    line-height: 30px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #555353;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.card p sub {
+    text-decoration: line-through;
+    color: #bbbbbb;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    ;
+}
+
+.card button {
+    background: rgb(165, 135, 35);
+    border: none;
+    padding: 8px;
+    color: white;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.products {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 20px;
+    border-bottom: 1px solid #555353;
+}
+
+.products h1 {
+    text-align: center;
+    color: rgb(165, 135, 35);
+    color: white;
+    padding: 4px;
+}
+
+.product-cards {
+    width: 98%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+
+    flex: 32%;
+    line-height: 30px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #555353;
+    margin: 3px;
+}
+
+.product img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.product .icons {
+    margin: 7px;
+}
+
+.product .icons i {
+    border: 1px solid #555353;
+
+    border-radius: 2px;
+    padding: 4px;
+}
+
+.product .ratings {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.product .ratings i {
+    width: 6px;
+    height: 6px;
+    margin: 5px;
+    color: rgb(255, 209, 59);
+}
+
+.reviews {
+    max-width: 100%;
+    height: auto;
+    margin: 40px;
+    border-bottom: 1px solid #555353;
+}
+
+.reviews h1 {
+    text-align: center;
+    color: rgb(165, 135, 35);
+    color: white;
+    padding: 4px;
+}
+
+.review-cards {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.review {
+    flex: 32%;
+    text-align: center;
+    padding: 15px;
+    margin: 7px auto;
+    border: 1px solid #555353;
+
+    margin: 5px;
+}
+
+.review img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.review i {
+    margin: 20px;
+    color: rgb(165, 135, 35);
+}
+
+.contact {
+    max-width: 100%;
+    height: auto;
+    margin: 40px;
+    border-bottom: 1px solid #555353;
+}
+
+.contact h1 {
+    text-align: center;
+    color: rgb(165, 135, 35);
+    color: white;
+    padding: 4px;
+}
+
+.form {
+    border: 1px solid #555353;
+    text-align: center;
+    width: 60%;
+    padding: 22px;
+    margin: 26px auto;
+    box-shadow: 5px 5px 20px #463b3b;
+    border-radius: 25px;
+}
+
+.form h2 {
+    color: rgb(165, 135, 35);
+}
+
+form input {
+    padding: 14px;
+    width: 305px;
+    text-align: left;
+    border: 1px solid #d4d0d0;
+    margin: 10px;
+    background: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    box-shadow: 5px 5px 20px #463b3b;
+}
+
+.form button {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgb(165, 135, 35);
+    border: none;
+    margin: 10px;
+    color: white;
+}
+
+.blogs {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 20px;
+    border-bottom: 1px solid #555353;
+}
+
+.blogs h1 {
+    text-align: center;
+    color: rgb(165, 135, 35);
+    color: white;
+    padding: 4px;
+}
+
+.blog-cards {
+    width: 98%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.blog {
+    flex: 32%;
+    text-align: center;
+    border: 1px solid #555353;
+    margin: 5px;
+}
+
+.blog img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.blog .myblog {
+    text-align: left;
+    margin: 20px;
+}
+
+.myblog h3 {
+    font-size: medium;
+}
+
+.myblog h3,
+p,
+button {
+    margin: 15px;
+
+}
+
+.myblog button {
+    padding: 7px;
+    background-color: rgb(165, 135, 35);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    margin: 0 15px;
+}
+
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: #181717;
+    bottom: 0;
+    padding: 2px;
+}
+
+.foot {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.foot .btns {
+    margin: 35px 30px 15px;
+}
+
+.foot p {
+
+    margin: auto;
+    width: 50%;
+
+}
+
+.foot .btns button {
+    padding: 7px 10px;
+    background: none;
+    margin: 7px;
+    border: rgb(165, 135, 35);
+    color: white;
+    border-radius: 2px;
+}
+
+.foot .btns button:hover {
+    background: rgb(165, 135, 35);
+    margin: 7px;
+    color: rgb(1, 2, 19);
+    border-radius: 2px;
+}
+
+.foot .btns button a {
+    text-decoration: none;
+    color: #f7f2f2;
+}
+
+.foot .icons {
+    margin: 15px;
+}
+
+.foot i {
+    background-color: rgb(165, 135, 35);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.menu-btn {
+    display: none;
+
+}
+
+.menu-btn i {
+    padding: 0;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin: 0;
+}
+
+
+
+.home-data button,
+.about-data button,
+.myblog button,
+.form button,
+.product button,
+.card button {
+    padding: 7px;
+    background: none;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid rgb(165, 135, 35);
+    font-weight: 600;
+}
+
+.home-data button:hover,
+.about-data button:hover,
+.myblog button:hover,
+.form button:hover,
+.product button:hover,
+.card button:hover {
+    background: rgb(165, 135, 35);
+    color: #181717
+}
+
+@media (max-width: 970px) and (min-width:820px) {
+    .cards {
+        width: 95vw;
+        margin: 40px auto;
+    }
+
+    .menu {
+        margin: 40px auto;
+    }
+
+    .blogs {
+        margin: 40px auto;
+    }
+
+    .blog {
+        width: 255px;
+    }
+
+    .blog-cards {
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width:650px) and (max-width:820px) {
+    .menu {
+        margin: 40px auto;
+    }
+
+    .home-data {
+        margin: 40px auto;
+    }
+
+    .cards {
+        width: 100vw;
+        margin: 40px 0;
+    }
+
+    .card {
+        width: 217px;
+        margin: 10px auto;
+    }
+
+    /* 
+    .products {
+        margin: 40px auto;
+    }
+
+    .product-cards {
+        width: 100%;
+    }
+
+    .product {
+        width: 205px;
+    } */
+
+    .blogs {
+        margin: 40px auto;
+    }
+
+    .blog {
+        margin: 10px;
+    }
+
+    .blog-cards {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width:650px) and (min-width:500px) {
+    header {
+        background-position: right;
+    }
+
+    .home-data {
+        margin: 40px auto;
+        text-align: left;
+    }
+
+    .about {
+        margin: 36px 20px;
+    }
+
+    .about-data {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin: 40px 10px;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .card {
+        width: 220px;
+        margin: 10px auto;
+    }
+
+    .products {
+        margin: 40px;
+    }
+
+    .product-cards {
+        width: 100%;
+    }
+
+    .product {
+        width: 200px;
+    }
+
+
+    .review {
+        flex: 50%;
+    }
+
+
+    .blogs {
+        width: 100%;
+        margin: 20px auto;
+
+    }
+
+    .blog {
+        margin: 10px;
+    }
+
+    .blog-cards {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .form {
+        width: 90%;
+    }
+}
+
+@media(max-width:500px) {
+    header {
+        background-position: right;
+    }
+
+    .home-data {
+        margin: 40px auto;
+        text-align: left;
+    }
+
+    .menu {
+        margin: auto;
+    }
+
+    .about {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .about-data {
+        flex-direction: column;
+    }
+
+    .reviews {
+        margin: 40px auto;
+    }
+
+    .review {
+        flex: 100%;
+    }
+
+    .form {
+        width: 96%;
+        margin: 10px auto;
+        padding: 30px 0;
+    }
+
+    .contact {
+        margin: 40px auto;
+    }
+
+    form input {
+        width: fit-content;
+        padding: 15px 3px;
+    }
+
+    .blogs {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .blog {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .blog-cards {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .blog {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .cards {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .card {
+        width: 97%;
+        margin: 10px auto;
+    }
+
+}
+
+@media (max-width:600px) {
+    .menu-btn {
+        display: inline-block;
+    }
+
+    nav {
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+    }
+
+    nav .links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        height: 100vh;
+        right: 0px;
+        background-color: white;
+        width: 134px;
+        transform: scaleY(0);
+    }
+
+    nav a {
+        color: black;
+    }
+
+    nav .links div {
+        margin: 7px;
+        padding: 7px;
+        width: 100px;
+    }
+
+    nav .links div:hover {
+        background-color: #181717;
+    }
+
+    nav .icons {
+        position: absolute;
+        right: 0px;
+    }
+}
+
+/* 
+@media (max-width: 350px) {
+    .form {
+        width: 100%;
+    }
+    .abou-data{
+        flex-direction: column;
+    }
+} */
